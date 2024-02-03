@@ -1,0 +1,27 @@
+.servicesContainer {
+    padding: 20px;
+  }
+  
+  .serviceItem {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .serviceCard {
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .serviceTitle {
+    margin-bottom: 10px;
+    color: #123456; // Replace with your desired title color
+  }
+  
+  .serviceDescription {
+    color: #555555; // Replace with your desired description color
+  }
+  

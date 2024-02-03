@@ -1,0 +1,32 @@
+.appBar {
+    background-color: #123456; // Replace with your desired navbar color
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5px;
+    
+    li {
+      list-style: none;
+      padding: 0 5px;
+      &:hover{
+        color: blue;
+      }
+    }
+  }
+  
+  .navLink {
+    color: #fff; // Replace with your desired link color
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+  
+    &:hover {
+      color: #123456; // Replace with your desired hover text color
+      background-color: #fff; // Replace with your desired hover background color
+      border-radius: 5px;
+    }
+  }
+  

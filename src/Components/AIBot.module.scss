@@ -1,0 +1,76 @@
+
+.button {
+    background-color: #0573e8;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.Main {
+    position: relative;
+    // left:  40%;
+    font-family: "Poppins";
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    padding: 20px;
+    width: 50%;
+    height: 100vh;
+}
+
+h1, h3 {
+    color: white;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    gap:1vh;
+    flex-direction: column;
+    align-items: center;
+    button{
+        background-color: #0573e8;
+        border: transparent;
+        height: 30px;
+        gap:1vh;
+    }
+}
+
+label{
+    color: white;
+    margin-bottom: 10px;
+}
+ input{
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    color:#121212;
+ }
+
+ @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+  }
+  
+  .typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    // letter-spacing: .15em;
+    animation: 
+      typing 5s steps(50, end),
+      blink-caret .75s step-end infinite;
+  }
+  
