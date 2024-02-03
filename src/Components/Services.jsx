@@ -9,17 +9,20 @@ const services = [
 ];
 
 const ServicesSection = () => {
-  return (
-    <Grid container spacing={2}>
+  return (<div style={{paddingTop:"4rem", paddingBottom:'3.6rem'}}>
+    <Grid  spacing={2}  style={{display:"flex", justifyContent:"center",alignItems:"center"}}>
       {services.map((service, index) => (
-        <Grid item xs={12} sm={4} key={index}>
+        <Grid item xs={12} sm={4} key={index} style={{paddingRight:'2rem'}}>
           <Card sx={{ 
             maxWidth: 345, 
             minHeight: 140,
             height:'20vh', // Adjust card size
             display: 'flex', 
             flexDirection: 'column', 
-            justifyContent: 'space-between' 
+            justifyContent: 'space-between', 
+            backgroundColor:"#e3e3ff",
+            backdropFilter:"blur(100px)",
+            // boxShadow:" rgba(0,0,0,0.2) 2px 1px"
           }}>
             <CardActionArea component={Link} to={service.link || '#'} sx={{ 
               p: 1, // Reduce padding
@@ -30,7 +33,8 @@ const ServicesSection = () => {
                 } 
               }}>
                 <Typography gutterBottom variant="h6" component="div" sx={{ 
-                  fontSize: '1rem', // Adjust title font size
+                  fontSize: '1rem',
+                   // Adjust title font size
                 }}>
                   {service.title}
                 </Typography>
@@ -45,6 +49,7 @@ const ServicesSection = () => {
         </Grid>
       ))}
     </Grid>
+    </div>
   );
 };
 
